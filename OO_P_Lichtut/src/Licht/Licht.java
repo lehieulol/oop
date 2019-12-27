@@ -47,13 +47,27 @@ class Child extends Parent{
 	*/
 }
 
+// you cant access this
+abstract class some_methol{
+	public void methol_1() {
+		System.out.println("methol_1");
+	}
+	public abstract void methol_2();
+}
+
+class some_methols extends some_methol{
+	public void methol_2() {
+		System.out.println("methol_2");
+	}
+}
+
 public class Licht{
 	public static void main(String[] args) {
 		Child c = new Child();
 		Parent p = new Parent();
 		p.print_1();
 		c.print__1();
-		//this will not work. Oh no Java dont support protected :( . (protected = public)
+		//this will not work if it in the other package :(.
 		p.print_2();
 		//child class can use parent class's methol. It's Inheritance
 		c.print_2();
@@ -68,5 +82,9 @@ public class Licht{
 		c.type(0);
 		c.type(new String());
 		c.type(true);
+		//abstraction
+		some_methols s = new some_methols();
+		s.methol_1();
+		s.methol_2();
 	}	
 }
