@@ -1,0 +1,5 @@
+Encapsulation is good to protect your code from hack.
+Inheritance provides a clear structure for the programs. It also allows me to debug the code without repeat the same actions.
+But I think It's better if there are multi-inheritance (It may allow me to make class "unicorn" from "horse" and "bird" one)
+Abtraction hides a certain of code (abstract classes) and gives me a menu of their descendants's methol (interface, abstract methol);
+Polymorphism allows me to use differrent methols with same name.
